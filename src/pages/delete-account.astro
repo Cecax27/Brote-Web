@@ -1,0 +1,178 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Delete Your Account — Brote"
+  description="Request the deletion of your Brote account and all associated data."
+>
+  <Header />
+  <main class="page">
+    <div class="page-inner">
+      <h1>Request Account Deletion</h1>
+      <p class="subtitle">
+        We're sorry to see you go. Use the form below to request the deletion of your
+        Brote account and all associated data.
+      </p>
+
+      <div class="info-box">
+        <h3>What happens when you delete your account?</h3>
+        <ul>
+          <li>All your plant journals, photos, and notes will be permanently deleted.</li>
+          <li>Your AI conversation history will be erased.</li>
+          <li>Your account information and credentials will be removed from our systems.</li>
+          <li>This action cannot be undone.</li>
+        </ul>
+      </div>
+
+      <form class="delete-form" name="account-deletion" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="account-deletion" />
+
+        <div class="form-group">
+          <label for="email">Email address associated with your account</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="you@example.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Reason for leaving <span class="optional">(optional)</span></label>
+          <textarea
+            id="reason"
+            name="reason"
+            rows="4"
+            placeholder="We'd love to know how we can improve..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="confirm" required />
+            <span>I understand that this action is irreversible and all my data will be permanently deleted.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-delete">Delete my account</button>
+      </form>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page {
+    padding: 64px 24px 80px;
+    min-height: 60vh;
+  }
+
+  .page-inner {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .page-inner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    color: #7B756E;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 36px;
+  }
+
+  .info-box {
+    background-color: rgba(200, 124, 90, 0.06);
+    border: 1px solid rgba(200, 124, 90, 0.15);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+
+  .info-box h3 {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3F3A36;
+    margin-bottom: 12px;
+  }
+
+  .info-box ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+
+  .info-box li {
+    color: #5A5550;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 6px;
+  }
+
+  .delete-form {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(168, 194, 154, 0.15);
+    border-radius: 18px;
+    padding: 36px 32px;
+  }
+
+  .form-group {
+    margin-bottom: 24px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #3F3A36;
+    margin-bottom: 8px;
+  }
+
+  .optional {
+    color: #A0988E;
+    font-weight: 400;
+  }
+
+  .checkbox-label {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  .checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin-top: 3px;
+    accent-color: #C87C5A;
+  }
+
+  .checkbox-label span {
+    font-weight: 400;
+    color: #5A5550;
+  }
+
+  .btn-delete {
+    width: 100%;
+    padding: 14px 28px;
+    background-color: #C87C5A;
+    color: #F8F6F2;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-delete:hover {
+    background-color: #B46A4A;
+    box-shadow: 0 4px 14px rgba(200, 124, 90, 0.35);
+  }
+</style>

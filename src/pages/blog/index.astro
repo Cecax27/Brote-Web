@@ -1,0 +1,124 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<BaseLayout
+  title="Blog — Brote"
+  description="Plant care tips, updates, and stories from the Brote team."
+>
+  <Header />
+  <main class="page">
+    <div class="page-inner">
+      <h1>From the Journal</h1>
+      <p class="subtitle">Plant care tips, updates, and stories.</p>
+
+      {sortedPosts.length === 0 ? (
+        <p class="empty-message">Coming soon. Our first posts are being planted.</p>
+      ) : (
+        <div class="posts-list">
+          {sortedPosts.map((post) => (
+            <a href={`/blog/${post.id}`} class="post-card">
+              <time datetime={post.data.date.toISOString()}>
+                {post.data.date.toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </time>
+              <h2>{post.data.title}</h2>
+              <p>{post.data.description}</p>
+              <span class="read-more">Read more &rarr;</span>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page {
+    padding: 64px 24px 80px;
+    min-height: 60vh;
+  }
+
+  .page-inner {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .page-inner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    color: #7B756E;
+    font-size: 1.05rem;
+    margin-bottom: 48px;
+  }
+
+  .empty-message {
+    text-align: center;
+    color: #A0988E;
+    font-size: 1.1rem;
+    padding: 60px 0;
+  }
+
+  .posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .post-card {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(168, 194, 154, 0.15);
+    border-radius: 18px;
+    padding: 28px 32px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(110, 142, 106, 0.08);
+    border-color: rgba(110, 142, 106, 0.25);
+  }
+
+  .post-card time {
+    display: block;
+    font-size: 0.8rem;
+    color: #A0988E;
+    margin-bottom: 8px;
+  }
+
+  .post-card h2 {
+    font-size: 1.35rem;
+    margin-bottom: 8px;
+    color: #3F3A36;
+  }
+
+  .post-card p {
+    color: #7B756E;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6E8E6A;
+  }
+</style>

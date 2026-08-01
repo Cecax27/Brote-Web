@@ -1,0 +1,206 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Terms of Service — Brote"
+  description="Brote's terms of service: rules and guidelines for using the app."
+>
+  <Header />
+  <main class="page">
+    <div class="page-inner">
+      <h1>Terms of Service</h1>
+      <p class="last-updated">Last updated: July 31, 2026</p>
+
+      <section>
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By downloading, installing, or using the Brote mobile application (the &ldquo;App&rdquo;), you agree
+          to be bound by these Terms of Service (&ldquo;Terms&rdquo;). If you do not agree to these Terms, do
+          not use the App.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Description of Service</h2>
+        <p>
+          Brote is a plant care companion app that allows you to manage your plants, keep journals, schedule
+          watering and fertilizing, upload photos, and interact with an AI assistant for plant care advice.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. User Accounts</h2>
+        <ul>
+          <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
+          <li>You are responsible for all activities that occur under your account.</li>
+          <li>You must provide accurate and complete information when creating an account.</li>
+          <li>You must not share your account with others or use another person&rsquo;s account.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. User Content</h2>
+        <p>
+          You retain ownership of the content you upload to the App, including photos, journal entries, and
+          plant data (&ldquo;User Content&rdquo;). By uploading User Content, you grant us a non-exclusive,
+          worldwide license to use, store, and display that content solely for the purpose of providing
+          and improving the App&rsquo;s services to you.
+        </p>
+        <p>You agree not to upload content that:</p>
+        <ul>
+          <li>Is illegal, harmful, or violates the rights of others.</li>
+          <li>Contains malware, viruses, or harmful code.</li>
+          <li>Infringes on intellectual property rights.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. AI Assistant (Flora)</h2>
+        <p>
+          The Flora AI assistant provides plant care advice based on general knowledge. The information
+          provided by Flora is for informational purposes only and should not be considered professional
+          horticultural advice. We do not guarantee the accuracy, completeness, or usefulness of any
+          information provided by the AI assistant.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Acceptable Use</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Use the App for any unlawful purpose.</li>
+          <li>Interfere with or disrupt the App or its servers.</li>
+          <li>Attempt to gain unauthorized access to any part of the App.</li>
+          <li>Use the App to harass, abuse, or harm others.</li>
+          <li>Reverse engineer, decompile, or disassemble any part of the App.</li>
+          <li>Use automated means to access or scrape the App without permission.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Intellectual Property</h2>
+        <p>
+          The App, its original content, features, and functionality are and will remain the exclusive property
+          of Brote. The Brote name, logo, and all related names, logos, product and service names are trademarks
+          of Brote. You may not use them without prior written permission.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Third-Party Links</h2>
+        <p>
+          The App may contain links to third-party websites or services that are not owned or controlled by
+          Brote. We have no control over and assume no responsibility for the content, privacy policies, or
+          practices of any third-party websites or services.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Disclaimer of Warranties</h2>
+        <p>
+          THE APP IS PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; WITHOUT WARRANTIES OF ANY
+          KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY,
+          FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Limitation of Liability</h2>
+        <p>
+          TO THE MAXIMUM EXTENT PERMITTED BY LAW, BROTE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+          SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA,
+          OR USE, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE APP.
+        </p>
+      </section>
+
+      <section>
+        <h2>11. Termination</h2>
+        <p>
+          We may terminate or suspend your account and access to the App immediately, without prior notice,
+          for any breach of these Terms. Upon termination, your right to use the App will cease immediately.
+          You may delete your account at any time through the <a href="/delete-account">account deletion form</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>12. Changes to Terms</h2>
+        <p>
+          We reserve the right to modify these Terms at any time. If a revision is material, we will try to
+          provide at least 30 days&rsquo; notice prior to any new terms taking effect. By continuing to
+          access or use the App after revisions become effective, you agree to be bound by the revised terms.
+        </p>
+      </section>
+
+      <section>
+        <h2>13. Governing Law</h2>
+        <p>
+          These Terms shall be governed by and construed in accordance with the laws of Mexico, without
+          regard to its conflict of law provisions.
+        </p>
+      </section>
+
+      <section>
+        <h2>14. Contact</h2>
+        <p>If you have any questions about these Terms, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:legal@brote.app">legal@brote.app</a></p>
+      </section>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page {
+    padding: 64px 24px 80px;
+    min-height: 60vh;
+  }
+
+  .page-inner {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .page-inner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+  }
+
+  .last-updated {
+    color: #A0988E;
+    font-size: 0.9rem;
+    margin-bottom: 48px;
+  }
+
+  .page-inner section {
+    margin-bottom: 40px;
+  }
+
+  .page-inner h2 {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    color: #3F3A36;
+  }
+
+  .page-inner p {
+    color: #5A5550;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 14px;
+  }
+
+  .page-inner ul {
+    list-style: disc;
+    padding-left: 24px;
+    margin-bottom: 14px;
+  }
+
+  .page-inner li {
+    color: #5A5550;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 6px;
+  }
+</style>
