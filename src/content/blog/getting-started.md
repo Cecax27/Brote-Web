@@ -1,37 +1,37 @@
 ---
-title: "Getting Started with Brote: Your Plant's New Best Friend"
-description: "Learn how Brote helps you keep a beautiful journal for each of your plants, track their care schedules, and get AI-powered advice."
+title: "Comienza con Brote: la nueva mejor amiga de tus plantas"
+description: "Aprende cómo Brote te ayuda a llevar un hermoso diario para cada una de tus plantas, seguir sus horarios de cuidado y obtener consejos con IA."
 date: 2026-07-28
 author: "Carlos Cervantes"
 image: "/images/illustrations/A%20healthy%20Monstera%20deliciosa%20in%20a%20simple%20matte%20ceramic%20pot.png"
 ---
 
-If you're anything like me, you love your plants but sometimes forget to water them on time. Or maybe you're not sure if that yellow leaf means too much sun or not enough. Brote was built for exactly those moments.
+Si eres como yo, amas tus plantas pero a veces olvidas regarlas a tiempo. O quizá no sabes si esa hoja amarilla significa demasiado sol o muy poco. Brote se creó justo para esos momentos.
 
-## What Brote Does
+## Qué hace Brote
 
-Brote is a plant care companion app for Android. Think of it as a beautiful notebook that lives alongside your plants. Here's what you can do with it:
+Brote es una app de cuidado de plantas para Android. Piensa en ella como un hermoso cuaderno que vive junto a tus plantas. Esto es lo que puedes hacer con ella:
 
-### Keep a Journal for Every Plant
+### Lleva un diario para cada planta
 
-Each plant you add gets its own journal. You can log notes, track when you last watered or fertilized, and even upload photos to document your plant's growth over time. There's something deeply satisfying about scrolling back through months of a plant's journey and seeing how far it's come.
+Cada planta que agregas tiene su propio diario. Puedes registrar notas, anotar cuándo regaste o fertilizaste por última vez, e incluso subir fotos para documentar el crecimiento de tu planta a lo largo del tiempo. Hay algo profundamente satisfactorio en recorrer meses del viaje de una planta y ver cuánto ha avanzado.
 
-### Ask Flora Anything
+### Pregúntale a Flora lo que sea
 
-Flora is Brote's AI assistant. She can help you identify issues with your plants, suggest care routines, and answer pretty much any plant-related question you throw at her. Is your Monstera looking sad? Ask Flora. Not sure when to repot? Ask Flora.
+Flora es la asistente de IA de Brote. Puede ayudarte a identificar problemas con tus plantas, sugerir rutinas de cuidado y responder prácticamente cualquier pregunta sobre plantas que le hagas. ¿Tu Monstera se ve triste? Pregúntale a Flora. ¿No sabes cuándo trasplantar? Pregúntale a Flora.
 
-### Gentle Reminders
+### Recordatorios amables
 
-Set up watering and fertilizing schedules, and Brote will remind you when it's time. The notifications are designed to feel helpful, not annoying — a quiet nudge rather than an alarm.
+Configura horarios de riego y fertilización, y Brote te recordará cuándo es el momento. Las notificaciones están diseñadas para sentirse útiles, no molestas — un empujoncito silencioso, no una alarma.
 
-## Our Design Philosophy
+## Nuestra filosofía de diseño
 
-Brote doesn't look like a typical app. The interface draws inspiration from botanical notebooks and watercolor illustrations. It's warm, calm, and meant to make you feel like you have time. No urgent reds, no aggressive notifications — just a quiet corner for caring for what grows at home.
+Brote no se ve como una app típica. La interfaz se inspira en cuadernos botánicos e ilustraciones en acuarela. Es cálida, tranquila y está pensada para hacerte sentir que tienes tiempo. Sin rojos urgentes, sin notificaciones agresivas — solo un rincón tranquilo para cuidar lo que crece en casa.
 
-## What's Next
+## Lo que viene
 
-Brote is currently in early access on Android. We're actively improving it based on tester feedback. If you'd like to help shape the app before the public launch, [sign up as a tester](#tester) — we'd love to have you.
+Brote está actualmente en acceso anticipado en Android. Estamos mejorándola activamente con base en los comentarios de los testers. Si quieres ayudar a dar forma a la app antes del lanzamiento público, [regístrate como tester](#tester) — nos encantaría tenerte.
 
-Happy growing!
+¡Feliz cultivo!
 
 — Carlos

@@ -1,40 +1,40 @@
 # Brote Web
 
-Promotional website for the [Brote](https://brote.app) Android app — your corner for caring for what grows at home.
+Sitio promocional para la app de Android [Brote](https://brote.app) — tu rincón para cuidar lo que crece en casa.
 
-Built with [Astro](https://astro.build), deployed on [Vercel](https://vercel.com).
+Construido con [Astro](https://astro.build), desplegado en [Vercel](https://vercel.com).
 
-## Quick Start
+## Inicio rápido
 
 ```sh
 pnpm install
 pnpm dev
 ```
 
-## Project Structure
+## Estructura del proyecto
 
 ```
 src/
-├── components/     # Reusable UI components
-├── content/        # Blog posts (Markdown)
-├── layouts/        # Page layouts
-├── pages/          # Routes
-└── styles/         # Global CSS
+├── components/     # Componentes reutilizables
+├── content/        # Entradas del blog (Markdown)
+├── layouts/        # Plantillas de página
+├── pages/          # Rutas
+└── styles/         # CSS global
 ```
 
-## Commands
+## Comandos
 
-| Command           | Action                                      |
+| Comando           | Acción                                      |
 | :---------------- | :------------------------------------------ |
-| `pnpm install`    | Install dependencies                        |
-| `pnpm dev`        | Start dev server at `localhost:4321`        |
-| `pnpm build`      | Build for production to `dist/`             |
-| `pnpm preview`    | Preview the production build locally        |
+| `pnpm install`    | Instalar dependencias                       |
+| `pnpm dev`        | Iniciar servidor en `localhost:4321`        |
+| `pnpm build`      | Compilar para producción en `dist/`         |
+| `pnpm preview`    | Previsualizar la compilación localmente     |
 
-## Deploy
+## Despliegue
 
-The site is configured for Vercel. Push to the `main` branch and Vercel will deploy automatically.
+El sitio está configurado para Vercel. Haz push a la rama `main` y Vercel desplegará automáticamente.
 
-## License
+## Licencia
 
-All rights reserved.
+Todos los derechos reservados.

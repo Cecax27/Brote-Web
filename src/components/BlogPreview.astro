@@ -10,15 +10,15 @@ const recentPosts = posts
 <section class="blog-preview">
   <div class="blog-preview-inner">
     <div class="blog-header">
-      <h2>From the Journal</h2>
-      <a href="/blog" class="view-all">View all posts &rarr;</a>
+      <h2>Del diario</h2>
+      <a href="/blog" class="view-all">Ver todas las entradas &rarr;</a>
     </div>
     {recentPosts.length > 0 ? (
       <div class="posts-grid">
         {recentPosts.map((post) => (
           <a href={`/blog/${post.id}`} class="post-card">
             <time datetime={post.data.date.toISOString()}>
-              {post.data.date.toLocaleDateString('en-US', {
+              {post.data.date.toLocaleDateString('es-MX', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
@@ -30,7 +30,7 @@ const recentPosts = posts
         ))}
       </div>
     ) : (
-      <p class="empty-message">Plant care stories coming soon.</p>
+      <p class="empty-message">Historias de cuidado de plantas próximamente.</p>
     )}
   </div>
 </section>

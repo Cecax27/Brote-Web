@@ -5,25 +5,25 @@ import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout
-  title="Delete Your Account — Brote"
-  description="Request the deletion of your Brote account and all associated data."
+  title="Eliminar tu cuenta — Brote"
+  description="Solicita la eliminación de tu cuenta de Brote y todos los datos asociados."
 >
   <Header />
   <main class="page">
     <div class="page-inner">
-      <h1>Request Account Deletion</h1>
+      <h1>Solicitar eliminación de cuenta</h1>
       <p class="subtitle">
-        We're sorry to see you go. Use the form below to request the deletion of your
-        Brote account and all associated data.
+        Lamentamos que te vayas. Usa el siguiente formulario para solicitar la eliminación de
+        tu cuenta de Brote y todos los datos asociados.
       </p>
 
       <div class="info-box">
-        <h3>What happens when you delete your account?</h3>
+        <h3>¿Qué sucede al eliminar tu cuenta?</h3>
         <ul>
-          <li>All your plant journals, photos, and notes will be permanently deleted.</li>
-          <li>Your AI conversation history will be erased.</li>
-          <li>Your account information and credentials will be removed from our systems.</li>
-          <li>This action cannot be undone.</li>
+          <li>Todos tus diarios de plantas, fotos y notas se eliminarán permanentemente.</li>
+          <li>Tu historial de conversaciones con la IA se borrará.</li>
+          <li>La información y credenciales de tu cuenta se eliminarán de nuestros sistemas.</li>
+          <li>Esta acción no se puede deshacer.</li>
         </ul>
       </div>
 
@@ -31,34 +31,34 @@ import Footer from '../components/Footer.astro';
         <input type="hidden" name="form-name" value="account-deletion" />
 
         <div class="form-group">
-          <label for="email">Email address associated with your account</label>
+          <label for="email">Correo electrónico asociado a tu cuenta</label>
           <input
             type="email"
             id="email"
             name="email"
             required
-            placeholder="you@example.com"
+            placeholder="tu@ejemplo.com"
           />
         </div>
 
         <div class="form-group">
-          <label for="reason">Reason for leaving <span class="optional">(optional)</span></label>
+          <label for="reason">Motivo por el que te vas <span class="optional">(opcional)</span></label>
           <textarea
             id="reason"
             name="reason"
             rows="4"
-            placeholder="We'd love to know how we can improve..."
+            placeholder="Nos encantaría saber cómo podemos mejorar..."
           ></textarea>
         </div>
 
         <div class="form-group">
           <label class="checkbox-label">
             <input type="checkbox" name="confirm" required />
-            <span>I understand that this action is irreversible and all my data will be permanently deleted.</span>
+            <span>Entiendo que esta acción es irreversible y todos mis datos se eliminarán permanentemente.</span>
           </label>
         </div>
 
-        <button type="submit" class="btn-delete">Delete my account</button>
+        <button type="submit" class="btn-delete">Eliminar mi cuenta</button>
       </form>
     </div>
   </main>

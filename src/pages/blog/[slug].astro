@@ -16,7 +16,7 @@ const { post } = Astro.props;
 ---
 
 <BaseLayout
-  title={`${post.data.title} — Brote Blog`}
+  title={`${post.data.title} — Blog de Brote`}
   description={post.data.description}
 >
   <Header />
@@ -24,7 +24,7 @@ const { post } = Astro.props;
     <article class="article">
       <header class="article-header">
         <time datetime={post.data.date.toISOString()}>
-          {post.data.date.toLocaleDateString('en-US', {
+          {post.data.date.toLocaleDateString('es-MX', {
             year: 'numeric',
             month: 'long',
             day: 'numeric',
@@ -36,7 +36,7 @@ const { post } = Astro.props;
       <div class="article-body" set:html={post.rendered?.html || post.body} />
     </article>
     <nav class="back-nav">
-      <a href="/blog">&larr; Back to the journal</a>
+      <a href="/blog">&larr; Volver al diario</a>
     </nav>
   </main>
   <Footer />

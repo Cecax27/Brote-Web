@@ -1,52 +1,52 @@
 ---
-title: "5 Common Plant Problems and How to Solve Them"
-description: "Yellow leaves, brown tips, drooping stems — here's how to diagnose and fix the most common houseplant issues."
+title: "5 problemas comunes de plantas y cómo resolverlos"
+description: "Hojas amarillas, puntas marrones, tallos caídos — aquí te contamos cómo diagnosticar y solucionar los problemas más frecuentes de las plantas de interior."
 date: 2026-07-25
-author: "Brote Team"
+author: "Equipo de Brote"
 image: "/images/illustrations/A%20single%20Monstera%20leaf%20turning%20yellow%2C%20elegant%20and%20realistic.png"
 ---
 
-Every plant parent has been there: you're doing everything right, and yet something looks *off*. Before you panic, take a breath. Most plant problems have simple solutions once you know what to look for.
+Todo padre de plantas ha pasado por esto: estás haciendo todo bien y, aun así, algo se ve *raro*. Antes de entrar en pánico, respira. La mayoría de los problemas de las plantas tienen soluciones sencillas una vez que sabes qué buscar.
 
-## 1. Yellow Leaves
+## 1. Hojas amarillas
 
-Yellowing leaves are probably the most common concern we see. The tricky part is that yellow leaves can mean several different things.
+Las hojas amarillentas son probablemente la preocupación más común que vemos. Lo complicado es que las hojas amarillas pueden significar varias cosas distintas.
 
-**If older leaves are yellowing:** This is often natural aging. Plants shed their oldest leaves to make room for new growth. As long as it's just one or two lower leaves, don't worry.
+**Si las hojas viejas se están poniendo amarillas:** Suele ser envejecimiento natural. Las plantas desechan sus hojas más viejas para dejar espacio al nuevo crecimiento. Mientras sea solo una o dos hojas inferiores, no te preocupes.
 
-**If many leaves are yellowing:** Check your watering. Overwatering is the most common cause. Let the soil dry out between waterings, and make sure your pot has drainage holes.
+**Si muchas hojas se están poniendo amarillas:** Revisa tu riego. El exceso de agua es la causa más común. Deja que la tierra se seque entre riegos y asegúrate de que la maceta tenga agujeros de drenaje.
 
-**If leaves are pale yellow with green veins:** This could be a nutrient deficiency, particularly iron. A balanced houseplant fertilizer can help.
+**Si las hojas están amarillo pálido con venas verdes:** Podría ser una deficiencia de nutrientes, particularmente de hierro. Un fertilizante balanceado para plantas de interior puede ayudar.
 
-## 2. Brown Leaf Tips
+## 2. Puntas marrones en las hojas
 
-Those crispy brown edges are usually a humidity issue. Most houseplants come from tropical environments and prefer higher humidity than the average home provides.
+Esos bordes crujientes y marrones suelen ser un problema de humedad. La mayoría de las plantas de interior provienen de ambientes tropicales y prefieren mayor humedad que la que tiene un hogar promedio.
 
-Try grouping your plants together (they create a microclimate), using a pebble tray with water, or running a humidifier nearby. Misting can help temporarily but isn't a long-term solution.
+Intenta agrupar tus plantas (crean un microclima), usar un plato con piedras y agua, o poner un humidificador cerca. Rociar con agua puede ayudar temporalmente pero no es una solución a largo plazo.
 
-## 3. Drooping or Wilting
+## 3. Tallos caídos o marchitos
 
-A droopy plant can be dramatic, but it's usually a simple fix.
+Una planta marchita puede ser dramática, pero generalmente se arregla fácil.
 
-**If the soil is dry:** Your plant is thirsty. Water it thoroughly until water runs out of the drainage holes.
+**Si la tierra está seca:** Tu planta tiene sed. Riégala abundantemente hasta que el agua salga por los agujeros de drenaje.
 
-**If the soil is wet:** Your plant might be drowning. Overwatering damages roots and prevents them from absorbing water — ironically causing wilting. Let the soil dry out and consider repotting if the soil stays soggy.
+**Si la tierra está mojada:** Tu planta podría estar ahogándose. El exceso de riego daña las raíces y les impide absorber agua — irónicamente causando marchitez. Deja que la tierra se seque y considera trasplantar si la tierra permanece empapada.
 
-## 4. Leggy or Stretched Growth
+## 4. Crecimiento larguirucho o estirado
 
-If your plant is growing long, thin stems with lots of space between leaves, it's reaching for more light. Move it closer to a window or consider a grow light. Most of the time, a brighter spot (but not direct harsh sun) fixes this within weeks.
+Si tu planta está produciendo tallos largos y delgados con mucho espacio entre las hojas, está buscando más luz. Acércala a una ventana o considera una luz de cultivo. La mayoría de las veces, un lugar más brillante (pero sin sol directo y fuerte) soluciona esto en semanas.
 
-## 5. Leaf Drop
+## 5. Caída de hojas
 
-If your plant suddenly drops leaves, it's probably stressed. Common triggers include:
+Si tu planta pierde hojas de repente, probablemente está estresada. Los desencadenantes comunes incluyen:
 
-- Moving to a new location
-- Temperature changes (drafts, AC vents)
-- Repotting
-- Seasonal changes
+- Mudarse a una nueva ubicación
+- Cambios de temperatura (corrientes de aire, aire acondicionado)
+- Trasplante
+- Cambios estacionales
 
-Give it time to adjust. Most plants recover once conditions stabilize.
+Dale tiempo para adaptarse. La mayoría de las plantas se recuperan cuando las condiciones se estabilizan.
 
-## When in Doubt, Ask Flora
+## En caso de duda, pregúntale a Flora
 
-Not sure what's wrong? Take a photo and ask Flora — Brote's AI assistant can help you diagnose issues and suggest care adjustments. Sometimes a second opinion (even an AI one) is all you need.
+¿No sabes qué le pasa? Toma una foto y pregúntale a Flora — la asistente de IA de Brote puede ayudarte a diagnosticar problemas y sugerir ajustes de cuidado. A veces una segunda opinión (incluso de una IA) es todo lo que necesitas.

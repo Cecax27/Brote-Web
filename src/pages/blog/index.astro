@@ -12,22 +12,22 @@ const sortedPosts = posts.sort(
 
 <BaseLayout
   title="Blog — Brote"
-  description="Plant care tips, updates, and stories from the Brote team."
+  description="Consejos de cuidado de plantas, novedades e historias del equipo de Brote."
 >
   <Header />
   <main class="page">
     <div class="page-inner">
-      <h1>From the Journal</h1>
-      <p class="subtitle">Plant care tips, updates, and stories.</p>
+      <h1>Del diario</h1>
+      <p class="subtitle">Consejos de cuidado de plantas, novedades e historias.</p>
 
       {sortedPosts.length === 0 ? (
-        <p class="empty-message">Coming soon. Our first posts are being planted.</p>
+        <p class="empty-message">Próximamente. Nuestras primeras entradas están germinando.</p>
       ) : (
         <div class="posts-list">
           {sortedPosts.map((post) => (
             <a href={`/blog/${post.id}`} class="post-card">
               <time datetime={post.data.date.toISOString()}>
-                {post.data.date.toLocaleDateString('en-US', {
+                {post.data.date.toLocaleDateString('es-MX', {
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric',
@@ -35,7 +35,7 @@ const sortedPosts = posts.sort(
               </time>
               <h2>{post.data.title}</h2>
               <p>{post.data.description}</p>
-              <span class="read-more">Read more &rarr;</span>
+              <span class="read-more">Leer más &rarr;</span>
             </a>
           ))}
         </div>
