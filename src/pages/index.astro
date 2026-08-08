@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import DownloadBanner from '../components/DownloadBanner.astro';
+import TesterSignup from '../components/TesterSignup.astro';
+import GuideSection from '../components/GuideSection.astro';
+import BlogPreview from '../components/BlogPreview.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Brote — Tu rincón para cuidar lo que crece en casa"
+  description="Brote te ayuda a cuidar tus plantas con un diario personal, recordatorios inteligentes y una asistente de IA. Disponible en Android."
+>
+  <Header />
+  <main>
+    <Hero />
+    <DownloadBanner />
+    <TesterSignup />
+    <GuideSection />
+    <BlogPreview />
+  </main>
+  <Footer />
+</BaseLayout>

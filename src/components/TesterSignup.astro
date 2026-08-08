@@ -1,0 +1,102 @@
+<section id="tester" class="tester">
+  <div class="tester-inner">
+    <h2>Conviértete en tester</h2>
+    <p>
+      Ayúdanos a dar forma a Brote antes del lanzamiento público. Como tester,
+      tendrás acceso anticipado a nuevas funciones y una línea directa con el equipo.
+    </p>
+    <form class="tester-form" name="tester-signup" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="tester-signup" />
+      <div class="form-fields">
+        <input
+          type="email"
+          name="email"
+          placeholder="Tu correo electrónico"
+          required
+          aria-label="Correo para registro de tester"
+        />
+        <button type="submit" class="btn-submit">Unirse a la lista</button>
+      </div>
+    </form>
+    <p class="tester-note">
+      Te avisaremos cuando haya un lugar disponible. Sin spam, nunca.
+    </p>
+  </div>
+</section>
+
+<style>
+  .tester {
+    padding: 64px 24px;
+  }
+
+  .tester-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(200, 124, 90, 0.06);
+    border-radius: 20px;
+    padding: 48px 40px;
+    border: 1px solid rgba(200, 124, 90, 0.15);
+  }
+
+  .tester-inner h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: #3F3A36;
+  }
+
+  .tester-inner p {
+    color: #7B756E;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0 auto 28px;
+  }
+
+  .form-fields {
+    display: flex;
+    gap: 12px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .form-fields input {
+    flex: 1;
+    font-size: 0.95rem;
+  }
+
+  .btn-submit {
+    padding: 12px 24px;
+    background-color: #C87C5A;
+    color: #F8F6F2;
+    border-radius: 24px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+
+  .btn-submit:hover {
+    background-color: #B46A4A;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(200, 124, 90, 0.35);
+  }
+
+  .tester-note {
+    margin-top: 16px;
+    font-size: 0.85rem !important;
+    color: #A0988E !important;
+  }
+
+  @media (max-width: 480px) {
+    .form-fields {
+      flex-direction: column;
+    }
+
+    .btn-submit {
+      width: 100%;
+    }
+  }
+</style>

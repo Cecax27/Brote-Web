@@ -1,0 +1,106 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="Brote home">
+      <img src="/images/logo.png" alt="" width="36" height="36" class="logo-img" />
+      <span class="logo-text">Brote</span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="/blog" class={currentPath.startsWith('/blog') ? 'active' : ''}>Blog</a>
+      <a href="/#download" class="">Descargar</a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="gh-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+        GitHub
+      </a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    padding: 20px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(248, 246, 242, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(110, 142, 106, 0.1);
+  }
+
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #3F3A36;
+  }
+
+  .logo-img {
+    border-radius: 8px;
+  }
+
+  .logo-text {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3F3A36;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .nav a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #7B756E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav a:hover,
+  .nav a.active {
+    color: #6E8E6A;
+  }
+
+  .gh-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    background-color: #F3F1EC;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .gh-link:hover {
+    background-color: #6E8E6A;
+    color: #F8F6F2 !important;
+  }
+
+  @media (max-width: 640px) {
+    .nav {
+      gap: 16px;
+    }
+
+    .logo-text {
+      font-size: 1.3rem;
+    }
+  }
+</style>

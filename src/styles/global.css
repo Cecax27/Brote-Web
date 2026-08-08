@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #F8F6F2;
+  color: #3F3A36;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #3F3A36;
+}
+
+a {
+  color: #6E8E6A;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5A7A56;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Inter', system-ui, sans-serif;
+  border: none;
+  background: none;
+}
+
+input, textarea, select {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #F3F1EC;
+  border: 1px solid #D4CFC6;
+  border-radius: 14px;
+  padding: 12px 16px;
+  color: #3F3A36;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #6E8E6A;
+}
+
+::selection {
+  background-color: rgba(110, 142, 106, 0.2);
+  color: #3F3A36;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

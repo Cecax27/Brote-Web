@@ -1,0 +1,129 @@
+---
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const recentPosts = posts
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
+---
+
+<section class="blog-preview">
+  <div class="blog-preview-inner">
+    <div class="blog-header">
+      <h2>Del diario</h2>
+      <a href="/blog" class="view-all">Ver todas las entradas &rarr;</a>
+    </div>
+    {recentPosts.length > 0 ? (
+      <div class="posts-grid">
+        {recentPosts.map((post) => (
+          <a href={`/blog/${post.id}`} class="post-card">
+            <time datetime={post.data.date.toISOString()}>
+              {post.data.date.toLocaleDateString('es-MX', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </time>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p class="empty-message">Historias de cuidado de plantas próximamente.</p>
+    )}
+  </div>
+</section>
+
+<style>
+  .blog-preview {
+    padding: 64px 24px;
+  }
+
+  .blog-preview-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .blog-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 36px;
+  }
+
+  .blog-header h2 {
+    font-size: 2rem;
+  }
+
+  .view-all {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #6E8E6A;
+    text-decoration: none;
+  }
+
+  .view-all:hover {
+    color: #5A7A56;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .post-card {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(168, 194, 154, 0.15);
+    border-radius: 18px;
+    padding: 28px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+  }
+
+  .post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(110, 142, 106, 0.1);
+    border-color: rgba(110, 142, 106, 0.25);
+  }
+
+  .post-card time {
+    font-size: 0.8rem;
+    color: #A0988E;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .post-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    color: #3F3A36;
+  }
+
+  .post-card p {
+    font-size: 0.9rem;
+    color: #7B756E;
+    line-height: 1.6;
+  }
+
+  .empty-message {
+    text-align: center;
+    color: #A0988E;
+    font-size: 1.05rem;
+    padding: 40px 0;
+  }
+
+  @media (max-width: 768px) {
+    .posts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .posts-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

@@ -1,0 +1,135 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+---
+
+<BaseLayout
+  title={`${post.data.title} — Blog de Brote`}
+  description={post.data.description}
+>
+  <Header />
+  <main class="page">
+    <article class="article">
+      <header class="article-header">
+        <time datetime={post.data.date.toISOString()}>
+          {post.data.date.toLocaleDateString('es-MX', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })}
+        </time>
+        <h1>{post.data.title}</h1>
+        <p class="article-description">{post.data.description}</p>
+      </header>
+      <div class="article-body" set:html={post.rendered?.html || post.body} />
+    </article>
+    <nav class="back-nav">
+      <a href="/blog">&larr; Volver al diario</a>
+    </nav>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page {
+    padding: 64px 24px 80px;
+    min-height: 60vh;
+  }
+
+  .article {
+    max-width: 700px;
+    margin: 0 auto 48px;
+  }
+
+  .article-header {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .article-header time {
+    display: block;
+    font-size: 0.85rem;
+    color: #A0988E;
+    margin-bottom: 16px;
+  }
+
+  .article-header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+
+  .article-description {
+    color: #7B756E;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .article-body {
+    color: #5A5550;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .article-body :global(h2) {
+    font-size: 1.5rem;
+    margin-top: 36px;
+    margin-bottom: 14px;
+  }
+
+  .article-body :global(h3) {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 28px;
+    margin-bottom: 10px;
+  }
+
+  .article-body :global(p) {
+    margin-bottom: 18px;
+  }
+
+  .article-body :global(ul),
+  .article-body :global(ol) {
+    padding-left: 24px;
+    margin-bottom: 18px;
+  }
+
+  .article-body :global(li) {
+    margin-bottom: 8px;
+  }
+
+  .article-body :global(strong) {
+    color: #3F3A36;
+  }
+
+  .back-nav {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .back-nav a {
+    color: #6E8E6A;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+  }
+
+  .back-nav a:hover {
+    color: #5A7A56;
+  }
+</style>
